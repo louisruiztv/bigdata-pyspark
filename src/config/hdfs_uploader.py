@@ -9,7 +9,7 @@ import os
 import subprocess
 from datetime import datetime
 
-def subir_a_hdfs(local_path=None, hdfs_dir="/data/pyspark"):
+def subir_a_hdfs(local_path=None, hdfs_dir="/bigdata-pyspark/data"):
     """
     Sube un archivo local a HDFS.
 

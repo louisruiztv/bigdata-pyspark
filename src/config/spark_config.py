@@ -17,7 +17,7 @@ def crear_spark_session(app_name="AnalisisVentas", master="local[*]"):
         conf = SparkConf() \
             .setAppName(app_name) \
             .setMaster(master) \
-            .set("spark.sql.warehouse.dir", "/tmp/spark-warehouse") \
+            .set("spark.sql.warehouse.dir", "/home/hadoop/bigdata-pyspark/spark-warehouse") \
             .set("javax.jdo.option.ConnectionURL", "jdbc:postgresql://localhost:5432/hive_metastore") \
             .set("javax.jdo.option.ConnectionDriverName", "org.postgresql.Driver") \
             .set("javax.jdo.option.ConnectionUserName", "username") \
